@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.css">
 <script src="jquery-3.2.0.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.js"></script>
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      
 
@@ -16,6 +15,34 @@
 	<title>Exalted</title>
 </head>
 <body>
+
+<div>
+
+
+	<ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+
+</div>  
+<script>
+	$(".button-collapse").sideNav();
+</script>
+
+
+</div>
 	  
 <!--__________________________datosJugador__________________-->
 <div  class="row">
@@ -41,7 +68,7 @@
 
 <div class="row">
 	<div class="col m12">
-	<h5 id="atributotitulo">Atributos</h5>
+	<h5 id="atributos">Atributos</h5>
 </div>
 	
 	
@@ -50,7 +77,145 @@
 		<form>
 			<div class="col m4">
 				
-				<h6>Fuerza</h6>
+				<h6 id="fuerza">Fuerza</h6>
+
+		       	<input name="grp1" type="radio" id="f1">
+	  			<label for="f1"></label>
+
+	  			<input name="grp1" type="radio" id="f2">
+	  			<label for="f2"></label>
+
+	  			<input name="grp1" type="radio" id="f3">
+	  			<label for="f3"></label>
+
+				<input name="grp1" type="radio" id="f4">
+				<label for="f4"></label>
+
+				<input name="grp1" type="radio" id="f5">
+				<label for="f5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="carisma">Carisma</h6>
+
+		       	<input name="grp1" type="radio" id="c1">
+	  			<label for="c1"></label>
+
+	  			<input name="grp1" type="radio" id="c2">
+	  			<label for="c2"></label>
+
+	  			<input name="grp1" type="radio" id="c3">
+	  			<label for="c3"></label>
+
+				<input name="grp1" type="radio" id="c4">
+				<label for="c4"></label>
+
+				<input name="grp1" type="radio" id="c5">
+				<label for="c5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="persepcion">Persepcion</h6>
+
+		       	<input name="grp1" type="radio" id="p1">
+	  			<label for="p1"></label>
+
+	  			<input name="grp1" type="radio" id="p2">
+	  			<label for="p2"></label>
+
+	  			<input name="grp1" type="radio" id="p3">
+	  			<label for="p3"></label>
+
+				<input name="grp1" type="radio" id="p4">
+				<label for="p4"></label>
+
+				<input name="grp1" type="radio" id="p5">
+				<label for="p5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="destraza">Destreza</h6>
+
+		       	<input name="grp1" type="radio" id="d1">
+	  			<label for="d1"></label>
+
+	  			<input name="grp1" type="radio" id="d2">
+	  			<label for="d2"></label>
+
+	  			<input name="grp1" type="radio" id="d3">
+	  			<label for="d3"></label>
+
+				<input name="grp1" type="radio" id="d4">
+				<label for="d4"></label>
+
+				<input name="grp1" type="radio" id="d5">
+				<label for="d5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="manupulacion">Manipulacion</h6>
+
+		       	<input name="grp1" type="radio" id="m1">
+	  			<label for="m1"></label>
+
+	  			<input name="grp1" type="radio" id="m2">
+	  			<label for="m2"></label>
+
+	  			<input name="grp1" type="radio" id="m3">
+	  			<label for="m3"></label>
+
+				<input name="grp1" type="radio" id="m4">
+				<label for="m4"></label>
+
+				<input name="grp1" type="radio" id="m5">
+				<label for="m5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="inteligencia">Inteligencia</h6>
+
+		       	<input name="grp1" type="radio" id="i1">
+	  			<label for="i1"></label>
+
+	  			<input name="grp1" type="radio" id="i2">
+	  			<label for="i2"></label>
+
+	  			<input name="grp1" type="radio" id="i3">
+	  			<label for="i3"></label>
+
+				<input name="grp1" type="radio" id="i4">
+				<label for="i4"></label>
+
+				<input name="grp1" type="radio" id="i5">
+				<label for="i5"></label>
+		    	
+	    	</div>
+		</form>
+
+		<form>
+			<div class="col m4">
+				
+				<h6 id="resistencia">Resistencia</h6>
 
 		       	<input name="grp1" type="radio" id="r1">
 	  			<label for="r1"></label>
@@ -73,22 +238,22 @@
 		<form>
 			<div class="col m4">
 				
-				<h6>Carisma</h6>
+				<h6 id="apariencia">Apariencia</h6>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="a1">
+	  			<label for="a1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="a2">
+	  			<label for="a2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="a3">
+	  			<label for="a3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="a4">
+				<label for="a4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="a5">
+				<label for="a5"></label>
 		    	
 	    	</div>
 		</form>
@@ -96,160 +261,22 @@
 		<form>
 			<div class="col m4">
 				
-				<h6>Persecion</h6>
+				<h6 id="astucia">Astucia</h6>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="as1">
+	  			<label for="as1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="as2">
+	  			<label for="as2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="as3">
+	  			<label for="as3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="as4">
+				<label for="as4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Destreza</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Manupulacion</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Inteligencia</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Resistencia</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Apariencia</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-		    	
-	    	</div>
-		</form>
-
-		<form>
-			<div class="col m4">
-				
-				<h6>Astucia</h6>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="as5">
+				<label for="as5"></label>
 		    	
 	    	</div>
 		</form>
@@ -269,104 +296,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Alba</h5>
+				<h5 id="alba">Alba</h5>
 
-				<h6>Arqueria</h6>
-				<input type="checkbox" class="filled-in" id="a1"  />
-      			<label for="a1"></label>
+				<h6 id="arqueria">Arqueria</h6>
+				<input type="checkbox" class="filled-in" id="arqc1"  />
+      			<label for="arqc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="arq1">
+	  			<label for="arq1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="arq2">
+	  			<label for="arq2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="arq3">
+	  			<label for="arq3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="arq4">
+				<label for="arq4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="arq5">
+				<label for="arq5"></label>
 		    
 
-		    	<h6>Artes Marciales</h6>
-				<input type="checkbox" class="filled-in" id="a2"  />
-      			<label for="a2"></label>
+		    	<h6 id="artesmarciales">Artes Marciales</h6>
+				<input type="checkbox" class="filled-in" id="armc1"  />
+      			<label for="armc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="arm1">
+	  			<label for="arm1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="arm2">
+	  			<label for="arm2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="arm3">
+	  			<label for="arm3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="arm4">
+				<label for="arm4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="arm5">
+				<label for="arm5"></label>
 	
 
-				<h6>Pelea</h6>
-				<input type="checkbox" class="filled-in" id="a3"  />
-      			<label for="a3"></label>
+				<h6 id="pelea">Pelea</h6>
+				<input type="checkbox" class="filled-in" id="pec1"  />
+      			<label for="pec1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="pe1">
+	  			<label for="pe1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="pe2">
+	  			<label for="pe2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="pe3">
+	  			<label for="pe3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="pe4">
+				<label for="pe4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="pe5">
+				<label for="pe5"></label>
 
-				<h6>Lanzar</h6>
-				<input type="checkbox" class="filled-in" id="a4"  />
-      			<label for="a4"></label>
+				<h6 id="lanzar">Lanzar</h6>
+				<input type="checkbox" class="filled-in" id="lanc1"  />
+      			<label for="lanc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="lan1">
+	  			<label for="lan1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="lan2">
+	  			<label for="lan2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="lan3">
+	  			<label for="lan3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="lan4">
+				<label for="lan4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="lan5">
+				<label for="lan5"></label>
 
-				<h6>Guerra</h6>
-				<input type="checkbox" class="filled-in" id="a5"  />
-      			<label for="a5"></label>
+				<h6 id="guerra">Guerra</h6>
+				<input type="checkbox" class="filled-in" id="guec1"  />
+      			<label for="guec1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="gue1">
+	  			<label for="gue1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="gue2">
+	  			<label for="gue2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="gue3">
+	  			<label for="gue3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="gue4">
+				<label for="gue4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="gue5">
+				<label for="gue5"></label>
 
 		</form>
 	</div>	
@@ -374,104 +401,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Cenit</h5>
+				<h5 id="cenit">Cenit</h5>
 
-				<h6>Integridad</h6>
-				<input type="checkbox" class="filled-in" id="c1"  />
-      			<label for="c1"></label>
+				<h6 id="intgridad">Integridad</h6>
+				<input type="checkbox" class="filled-in" id="intec1"  />
+      			<label for="intec1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="inte1">
+	  			<label for="inte1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="inte2">
+	  			<label for="inte2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="inte3">
+	  			<label for="inte3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="inte4">
+				<label for="inte4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="inte5">
+				<label for="inte5"></label>
 		    
 
-		    	<h6>Interpretacion</h6>
-				<input type="checkbox" class="filled-in" id="c2"  />
-      			<label for="c2"></label>
+		    	<h6 id="interpretacion">Interpretacion</h6>
+				<input type="checkbox" class="filled-in" id="interc1"  />
+      			<label for="interc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="inter1">
+	  			<label for="inter1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="inter2">
+	  			<label for="inter2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="inter3">
+	  			<label for="inter3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="inter4">
+				<label for="inter4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="inter5">
+				<label for="inter5"></label>
 	
 
-				<h6>Presencia</h6>
-				<input type="checkbox" class="filled-in" id="c3"  />
-      			<label for="c3"></label>
+				<h6 id="presencia">Presencia</h6>
+				<input type="checkbox" class="filled-in" id="presc1"  />
+      			<label for="presc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="pres1">
+	  			<label for="pres1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="pres2">
+	  			<label for="pres2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="pres3">
+	  			<label for="pres3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="pres4">
+				<label for="pres4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="pres5">
+				<label for="pres5"></label>
 
-				<h6>Resistencia</h6>
-				<input type="checkbox" class="filled-in" id="c4"  />
-      			<label for="c4"></label>
+				<h6 id="resistencia">Resistencia</h6>
+				<input type="checkbox" class="filled-in" id="resc1"  />
+      			<label for="resc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="res1">
+	  			<label for="res1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="res2">
+	  			<label for="res2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="res3">
+	  			<label for="res3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="res4">
+				<label for="res4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="res5">
+				<label for="res5"></label>
 
-				<h6>Supervivencia</h6>
-				<input type="checkbox" class="filled-in" id="c5"  />
-      			<label for="c5"></label>
+				<h6 id="supervivencia">Supervivencia</h6>
+				<input type="checkbox" class="filled-in" id="supc1"  />
+      			<label for="supc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="sup1">
+	  			<label for="sup1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="sup2">
+	  			<label for="sup2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="sup3">
+	  			<label for="sup3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="sup4">
+				<label for="sup4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="sup5">
+				<label for="sup5"></label>
 
 		</form>
 	</div>	
@@ -479,104 +506,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Crepusculo</h5>
+				<h5 id="crepusculo">Crepusculo</h5>
 
-				<h6>Profecion</h6>
-				<input type="checkbox" class="filled-in" id="cr1"  />
-      			<label for="cr1"></label>
+				<h6 id="Profecion">Profecion</h6>
+				<input type="checkbox" class="filled-in" id="profc1"  />
+      			<label for="profc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="prof1">
+	  			<label for="prof1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="prof2">
+	  			<label for="prof2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="prof3">
+	  			<label for="prof3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="prof4">
+				<label for="prof4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="prof5">
+				<label for="prof5"></label>
 		    
 
-		    	<h6>Investigacion</h6>
-				<input type="checkbox" class="filled-in" id="cr2"  />
-      			<label for="cr2"></label>
+		    	<h6 id="investigacion">Investigacion</h6>
+				<input type="checkbox" class="filled-in" id="invc1"  />
+      			<label for="invc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="inv1">
+	  			<label for="inv1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="inv2">
+	  			<label for="inv2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="inv3">
+	  			<label for="inv3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="inv4">
+				<label for="inv4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="inv5">
+				<label for="inv5"></label>
 	
 
-				<h6>Saber</h6>
-				<input type="checkbox" class="filled-in" id="cr3"  />
-      			<label for="cr3"></label>
+				<h6 id="saber">Saber</h6>
+				<input type="checkbox" class="filled-in" id="sac1"  />
+      			<label for="sac1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="sa1">
+	  			<label for="sa1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="sa2">
+	  			<label for="sa2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="sa3">
+	  			<label for="sa3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="sa4">
+				<label for="sa4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="sa5">
+				<label for="sa5"></label>
 
-				<h6>Medicina</h6>
-				<input type="checkbox" class="filled-in" id="cr4"  />
-      			<label for="cr4"></label>
+				<h6 id="medicina">Medicina</h6>
+				<input type="checkbox" class="filled-in" id="medc1"  />
+      			<label for="medc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="med1">
+	  			<label for="med1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="med2">
+	  			<label for="med2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="med3">
+	  			<label for="med3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="med4">
+				<label for="med4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="med5">
+				<label for="med5"></label>
 
-				<h6>Ocultismo</h6>
-				<input type="checkbox" class="filled-in" id="cr5"  />
-      			<label for="cr5"></label>
+				<h6 id="ocultimo">Ocultismo</h6>
+				<input type="checkbox" class="filled-in" id="occ1"  />
+      			<label for="occ1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="oc1">
+	  			<label for="oc1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="oc2">
+	  			<label for="oc2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="oc3">
+	  			<label for="oc3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="oc4">
+				<label for="oc4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="oc5">
+				<label for="oc5"></label>
 
 		</form>
 	</div>	
@@ -585,104 +612,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Noche</h5>
+				<h5 id="noche">Noche</h5>
 
-				<h6>Atletismo</h6>
-				<input type="checkbox" class="filled-in" id="n1"  />
-      			<label for="n1"></label>
+				<h6 id="atletismo">Atletismo</h6>
+				<input type="checkbox" class="filled-in" id="atlc1"  />
+      			<label for="atlc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="atl1">
+	  			<label for="atl1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="atl2">
+	  			<label for="atl2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="atl3">
+	  			<label for="atl3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="atl4">
+				<label for="atl4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="atl5">
+				<label for="atl5"></label>
 		    
 
-		    	<h6>Conciencia</h6>
-				<input type="checkbox" class="filled-in" id="n2"  />
-      			<label for="n2"></label>
+		    	<h6 id="conciencia">Conciencia</h6>
+				<input type="checkbox" class="filled-in" id="concc1"  />
+      			<label for="concc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="conc1">
+	  			<label for="conc1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="conc2">
+	  			<label for="conc2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="conc3">
+	  			<label for="conc3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="conc4">
+				<label for="conc4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="conc5">
+				<label for="conc5"></label>
 	
 
-				<h6>Esquiva</h6>
-				<input type="checkbox" class="filled-in" id="n3"  />
-      			<label for="n3"></label>
+				<h6 id="esquiva">Esquiva</h6>
+				<input type="checkbox" class="filled-in" id="esqc1"  />
+      			<label for="esqc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="esq1">
+	  			<label for="esq1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="esq2">
+	  			<label for="esq2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="esq3">
+	  			<label for="esq3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="esq4">
+				<label for="esq4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="esq5">
+				<label for="esq5"></label>
 
-				<h6>Robar</h6>
-				<input type="checkbox" class="filled-in" id="n4"  />
-      			<label for="n4"></label>
+				<h6 id="robar">Robar</h6>
+				<input type="checkbox" class="filled-in" id="roc1"  />
+      			<label for="roc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="ro1">
+	  			<label for="ro1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="ro2">
+	  			<label for="ro2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="ro3">
+	  			<label for="ro3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="ro4">
+				<label for="ro4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="ro5">
+				<label for="ro5"></label>
 
-				<h6>Sigilo</h6>
-				<input type="checkbox" class="filled-in" id="n5"  />
-      			<label for="n5"></label>
+				<h6 id="sigilo">Sigilo</h6>
+				<input type="checkbox" class="filled-in" id="sigc1"  />
+      			<label for="sigc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="sig1">
+	  			<label for="sig1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="sig2">
+	  			<label for="sig2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="sig3">
+	  			<label for="sig3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="sig4">
+				<label for="sig4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="sig5">
+				<label for="sig5"></label>
 
 		</form>
 	</div>	
@@ -690,104 +717,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Eclipce</h5>
+				<h5 id="eclipce">Eclipce</h5>
 
-				<h6>Burocracia</h6>
-				<input type="checkbox" class="filled-in" id="e1"  />
-      			<label for="e1"></label>
+				<h6 id="burocracia">Burocracia</h6>
+				<input type="checkbox" class="filled-in" id="burc1"  />
+      			<label for="burc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="bur1">
+	  			<label for="bur1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="bur2">
+	  			<label for="bur2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="bur3">
+	  			<label for="bur3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="bur4">
+				<label for="bur4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="bur5">
+				<label for="bur5"></label>
 		    
 
-		    	<h6>Lenguistica</h6>
-				<input type="checkbox" class="filled-in" id="e2"  />
-      			<label for="e2"></label>
+		    	<h6 id="lenguistica">Lenguistica</h6>
+				<input type="checkbox" class="filled-in" id="lenc1"  />
+      			<label for="lenc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="len1">
+	  			<label for="len1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="len2">
+	  			<label for="len2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="len3">
+	  			<label for="len3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="len4">
+				<label for="len4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="len5">
+				<label for="len5"></label>
 	
 
-				<h6>Montar</h6>
-				<input type="checkbox" class="filled-in" id="e3"  />
-      			<label for="e3"></label>
+				<h6 id="montar">Montar</h6>
+				<input type="checkbox" class="filled-in" id="monc1"  />
+      			<label for="monc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="mon1">
+	  			<label for="mon1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="mon2">
+	  			<label for="mon2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="mon3">
+	  			<label for="mon3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="mon4">
+				<label for="mon4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="mon5">
+				<label for="mon5"></label>
 
-				<h6>Navegar</h6>
-				<input type="checkbox" class="filled-in" id="e4"  />
-      			<label for="e4"></label>
+				<h6 id="navegar">Navegar</h6>
+				<input type="checkbox" class="filled-in" id="navc1"  />
+      			<label for="navc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="nav1">
+	  			<label for="nav1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="nav2">
+	  			<label for="nav2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="nav3">
+	  			<label for="nav3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="nav4">
+				<label for="nav4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="nav5">
+				<label for="nav5"></label>
 
-				<h6>Socializar</h6>
-				<input type="checkbox" class="filled-in" id="e5"  />
-      			<label for="e5"></label>
+				<h6 id="socializar">Socializar</h6>
+				<input type="checkbox" class="filled-in" id="soc5"  />
+      			<label for="soc5"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="socc1">
+	  			<label for="socc1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="soc2">
+	  			<label for="soc2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="soc3">
+	  			<label for="soc3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="soc4">
+				<label for="soc4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="soc5">
+				<label for="soc5"></label>
 
 		</form>
 	</div>	
@@ -795,104 +822,104 @@
 	<div class="col m4">
 		
 		<form>
-				<h5>Otros</h5>
+				<h5 id="otros">Otros</h5>
 
 				<h6></h6>
-				<input type="checkbox" class="filled-in" id="o1"  />
-      			<label for="o1"></label>
+				<input type="checkbox" class="filled-in" id="otc1"  />
+      			<label for="otc1"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="ot1">
+	  			<label for="ot1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="ot2">
+	  			<label for="ot2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="ot3">
+	  			<label for="ot3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="ot4">
+				<label for="ot4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="ot5">
+				<label for="ot5"></label>
 		    
 
 		    	<h6></h6>
-				<input type="checkbox" class="filled-in" id="o2"  />
-      			<label for="o2"></label>
+				<input type="checkbox" class="filled-in" id="otc02"  />
+      			<label for="otc02"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="ot01">
+	  			<label for="ot01"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="ot02">
+	  			<label for="ot02"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="ot03">
+	  			<label for="ot03"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="ot04">
+				<label for="ot04"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="ot05">
+				<label for="ot05"></label>
 	
 
 				<h6></h6>
-				<input type="checkbox" class="filled-in" id="o3"  />
-      			<label for="o3"></label>
+				<input type="checkbox" class="filled-in" id="otc13"  />
+      			<label for="otc13"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="ot11">
+	  			<label for="ot11"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="ot12">
+	  			<label for="ot12"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="ot13">
+	  			<label for="ot13"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="ot14">
+				<label for="ot14"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
-
-				<h6></h6>
-				<input type="checkbox" class="filled-in" id="o4"  />
-      			<label for="o4"></label>
-
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
-
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
-
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
-
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
-
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="ot15">
+				<label for="ot15"></label>
 
 				<h6></h6>
-				<input type="checkbox" class="filled-in" id="o5"  />
-      			<label for="o5"></label>
+				<input type="checkbox" class="filled-in" id="otc24"  />
+      			<label for="otc24"></label>
 
-		       	<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+		       	<input name="grp1" type="radio" id="ot21">
+	  			<label for="ot21"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="ot22">
+	  			<label for="ot22"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="ot23">
+	  			<label for="ot23"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="ot24">
+				<label for="ot24"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="ot25">
+				<label for="ot25"></label>
+
+				<h6></h6>
+				<input type="checkbox" class="filled-in" id="otc35"  />
+      			<label for="otc35"></label>
+
+		       	<input name="grp1" type="radio" id="ot31">
+	  			<label for="ot31"></label>
+
+	  			<input name="grp1" type="radio" id="ot32">
+	  			<label for="ot32"></label>
+
+	  			<input name="grp1" type="radio" id="ot33">
+	  			<label for="ot33"></label>
+
+				<input name="grp1" type="radio" id="ot34">
+				<label for="ot34"></label>
+
+				<input name="grp1" type="radio" id="ot35">
+				<label for="ot35"></label>
 
 		</form>
 	</div>
@@ -914,23 +941,23 @@
 
 	</div>
 
-	<div class="col m4">
+	<div id="radescenccia" class="col m4">
 
 				<form >
-				<input name="grp1" type="radio" id="r1">
-	  			<label for="r1"></label>
+				<input name="grp1" type="radio" id="escec1">
+	  			<label for="escec1"></label>
 
-	  			<input name="grp1" type="radio" id="r2">
-	  			<label for="r2"></label>
+	  			<input name="grp1" type="radio" id="esce2">
+	  			<label for="esce2"></label>
 
-	  			<input name="grp1" type="radio" id="r3">
-	  			<label for="r3"></label>
+	  			<input name="grp1" type="radio" id="esce3">
+	  			<label for="esce3"></label>
 
-				<input name="grp1" type="radio" id="r4">
-				<label for="r4"></label>
+				<input name="grp1" type="radio" id="esce4">
+				<label for="esce4"></label>
 
-				<input name="grp1" type="radio" id="r5">
-				<label for="r5"></label>
+				<input name="grp1" type="radio" id="esce5">
+				<label for="esce5"></label>
 				</form>
 
 		<div class="input-field col s6">
