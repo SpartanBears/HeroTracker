@@ -1,0 +1,21 @@
+.container{
+
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 3px;
+	border-color: #26A6AC;
+	margin: 5px 5px 5px 5px;
+	text-align: center;
+}
+
+.hidden{
+
+	display: none;
+}
+
+/*---*/
+
+#wpnStatContainer{
+
+	text-align: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Select + Display</title>
+
+		<!--DEPENDENCIES-->
+		<script type="text/javascript" src="../libraries/jquery-3.2.0.js"></script>
+		<script type="text/javascript" src="../libraries/materialize/js/materialize.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../libraries/materialize/css/materialize.css">
+
+		<!--APP-->
+		<script type="text/javascript" src="../js/ejemploSelectDisplay.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="../css/ejemploSelectDisplay.css">
+	</head>
+	<body>
+	<div class="row">
+		<div class="container col s3">
+			<div class="row">
+
+				<div class="input-field col s12">
+					<select id="wpnSelect">
+						<option value="" disabled selected>Escoge un arma</option>
+						
+					</select>
+					<label>Armas</label>
+				</div>
+			</div>
+		</div>
+		<div class="hidden col s8">
+			<div id="wpnStatContainer" class="row">
+			</div>
+		</div>
+	</div>
+		
+
+	</body>
+</html>
