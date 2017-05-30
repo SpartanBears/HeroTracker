@@ -1,83 +1,83 @@
 $(document).ready(function(){
 
-	initWeaponSelect();
+	initSAttackSelect();
 });
 
 //simula el consumo de un servicio para obtener un JSON que contiene las armas
-function getWeapons(callback){
+function getSAttack(callback){
 
 	//ajax success
 
 	var serverResponse = [
-		{name:"Axe", statA:1, statB: 4},
-		{name:"Sword", statA:1, statB: 6, statC: 123},
-		{name:"Dildo", statA:999, statB: 999, statC: 999, statD: "la pinga es fuerte"},
+		{name:"a1", statA:1, statB: 4},
+		{name:"a2", statA:1, statB: 6, statC: 123},
+		{name:"a3", statA:999, statB: 999, statC: 999, statD: "asdfg"},
 	];
 
 	callback(serverResponse);
 }
 
 //crea elementos DOM (option) para el select de las armas e inicializa el select
-function populateWeaponSelect(weapons){
+function populateSAttackSelect(sAttack){
 
-	var wpnSelect = document.querySelector("#wpnSelect");
+	var saSelect = document.querySelector("#saSelect");
 
-	for(var index = 0; index < weapons.length; index++){
+	for(var index = 0; index < sAttack.length; index++){
 
-		var cWpn = weapons[index];
+		var cSA = sAttack[index];
 
 		var nOpt = document.createElement("option");
 
-		nOpt.id = "wpn_"+index;
-		nOpt.innerHTML = cWpn.name;
+		nOpt.id = "sa_"+index;
+		nOpt.innerHTML = cSA.name;
 		nOpt.value = index;
 
-		var cWpnStats = Object.keys(cWpn);
+		var cSAStats = Object.keys(cSA);
 
-		for(var indexS = 0; indexS < cWpnStats.length; indexS++){
+		for(var indexS = 0; indexS < cSAStats.length; indexS++){
 
-			nOpt.dataset[cWpnStats[indexS]] = cWpn[cWpnStats[indexS]];
+			nOpt.dataset[cSAStats[indexS]] = cSA[cSAStats[indexS]];
 		}
 
-		wpnSelect.appendChild(nOpt);
+		saSelect.appendChild(nOpt);
 	}
 
-	$('#wpnSelect').material_select();
-	$('#wpnSelect').on('change', weaponSelectEvt);
+	$('#saSelect').material_select();
+	$('#saSelect').on('change', socialAttackSelectEvt);
 }
 
 //inicializa el select de armas
-function initWeaponSelect(){
+function initSAttackSelect(){
 
 	//pasamos metodo como callback
-	getWeapons(populateWeaponSelect);
+	getSAttack(populateSAttackSelect);
 }
 
-function weaponSelectEvt(e){
+function socialAttackSelectEvt(e){
 
-	var weaponDom = document.querySelector("#wpn_"+this.value);
+	var saDom = document.querySelector("#sa_"+this.value);
 
-	refreshWeaponDisplay(weaponDom);
+	refreshSADisplay(saDom);
 }
 
 //recibe un option del select
-function refreshWeaponDisplay(weaponDom){
+function refreshSADisplay(saDom){
 
-	var wpnStats = Object.keys(weaponDom.dataset);
-	var statContainer = document.querySelector("#wpnStatContainer");
+	var saStats = Object.keys(saDom.dataset);
+	var statContainer = document.querySelector("#saStatContainer");
 
 	statContainer.innerHTML = "";
 
-	for(var index = 0; index < wpnStats.length; index++){
+	for(var index = 0; index < saStats.length; index++){
 
 		var col = document.createElement("div");
-		col.className = "col s"+(Math.floor(12/wpnStats.length));
+		col.className = "col s"+(Math.floor(12/saStats.length));
 
 		var statName = document.createElement("h5");
-		statName.innerHTML = wpnStats[index];
+		statName.innerHTML = saStats[index];
 
 		var statValue = document.createElement("p");
-		statValue.innerHTML = weaponDom.dataset[wpnStats[index]];
+		statValue.innerHTML = saDom.dataset[saStats[index]];
 
 		col.appendChild(statName);
 		col.appendChild(statValue);
