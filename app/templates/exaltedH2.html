@@ -12,6 +12,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
      <LINK REL=StyleSheet HREF="../css/styles.css" TYPE="text/css" MEDIA=all>
 
+		<script type="text/javascript" src="../js/displaySocialAttack.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/ejemploSelectDisplay.css">
 	<meta charset="UTF-8">
 	<title>Exalted h2</title>
 </head>
@@ -100,63 +102,26 @@
 				
 			</div >
 
-
-
+<!--_______________________________ataques social____________________________-->
 
 <div class="row">
-	
-<div class="col m12">
-	 
+		<div class="container col s3">
+			<div class="row">
 
-	  <table class="striped">
-        <thead>
-          <tr>
-              <th>Habilidad</th>
-              <th>Velocidad</th>
-              <th>Acc(Cha/Man)</th>
-              <th>PMDV(Cha/Man)</th>
-              <th>Precio</th>
-              <th>Notas</th>
-
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-          </tr>
-        </tbody>
-
-        <tbody>
-          <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-          </tr>
-        </tbody>
-
-        <tbody>
-          <tr>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-            <td><input type="text"></td>
-          </tr>
-        </tbody>
-      </table>
-
-</div>
-</div>
+				<div class="input-field col s12">
+					<select id="wpnSelect">
+						<option value="" disabled selected>Escoge un arma</option>
+						
+					</select>
+					<label>Armas</label>
+				</div>
+			</div>
+		</div>
+		<div class="hidden col s8">
+			<div id="wpnStatContainer" class="row">
+			</div>
+		</div>
+	</div>
 
 <!--_______________________________en debate____________________________-->
 
